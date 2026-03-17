@@ -52,3 +52,19 @@ let newPrice = 42
 console.log('New price: ', newPrice, '\nType of newPrice: ', typeof newPrice)
 newPrice = 'Forty-two'
 console.log('New price: ', newPrice, '\nType of newPrice: ', typeof newPrice)
+
+// в строку
+let num = 42
+let str = String(num)
+let str2 = num.toString()
+let str3 = '' + num //
+
+// в число
+let strNum = '123'
+let int = Number(strNum)
+let int2 = parseInt('42')
+let float = parseFloat('12.34')
+let int3 = +'99' // 99
+
+// в булево значение
+let bool1 = Boolean(1)
