@@ -68,3 +68,28 @@ let int3 = +'99' // 99
 
 // в булево значение
 let bool1 = Boolean(1)
+
+// Сравнение значений
+console.log(5 == '5') // true (нестрогое, с преобразованием типов)
+console.log(5 === '5') // false (строгое, без преобразования типов)
+console.log(0 == false) // true
+console.log(0 === false) // false
+console.log(null == undefined) // true
+console.log(null === undefined) // false
+
+// ⚠️ Объекты сравниваются по ссылке, а не по содержимому:
+let obj1 = { name: 'John' }
+let obj2 = { name: 'John' }
+
+console.log(obj1 == obj2) // false
+console.log(obj1 === obj2) // false
+
+// Почему? Это разные объекты в памяти!
+
+let obj3 = obj1 // obj3 ссылается на тот же объект
+console.log(obj1 === obj3) // true
+
+// То же с массивами:
+let arr1 = [1, 2, 3]
+let arr2 = [1, 2, 3]
+// console.log(arr1 === arr2); // false (так как это разные массивы в памяти)
